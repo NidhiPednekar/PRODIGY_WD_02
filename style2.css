@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('hg3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.stopwatch {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    margin-right: -800px; /* Optional: add some margin to the right */
+}
+
+.time {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #e9ecef;
+    padding: 5px;
+    border-radius: 5px;
+}
